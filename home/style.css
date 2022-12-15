@@ -1,0 +1,314 @@
+/* Aqui representará todo painel inicial*/
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+}
+/* Aqui representará todo painel inicial*/
+
+
+/*-----------------------------------------------------------------*/
+
+
+/*Aqui ficará todo o cabeçalho*/
+
+.header{
+    background-color: white;
+    grid-template-columns: 400px 2fr 2fr ;
+    display: grid;
+}
+.logo{
+    
+    border-radius: 10px;
+    margin: 7px;
+}
+
+/*-- Campo de busca --*/
+
+.campodebusca{
+    background-color: ;
+    margin-left: 70px;
+    padding-right: 125px;
+}
+
+#seachprincipal{
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 425px;
+    padding: 3px;
+    font-size: 30px;
+    margin-top: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 1s;
+    border: 2px solid green;
+    background-color: white;
+}
+
+#seachprincipal:hover{
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 450px;
+    padding: 3px;
+    font-size: 30px;
+    margin-top: 24px;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 1s;
+    
+    border: 3px solid gold;
+    background-color: whitesmoke;
+}
+
+
+
+/*-- Campo de busca --*/
+
+/*-----------------------------------------------------------------*/
+
+/*Botões Login e cadastro*/
+
+.logincadastro{
+    background-color: ;
+    justify-items: center;
+    margin-top: 15px;
+    padding: 10px;
+}
+.login{
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 15px;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bolder;
+    transition: .6s;
+    text-decoration: none;
+}
+
+.login:hover{
+    background-color: gold;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 15px;
+    color: green;
+    font-family: monospace;
+    transition: .6s;
+    text-decoration: none;
+}
+
+.cadastro{
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bolder;
+    transition: .6s;
+    text-decoration: none;
+}
+.cadastro:hover{
+    background-color: gold;
+    padding: 10px;
+    border-radius: 10px;
+    color: green;
+    font-family: monospace;
+    transition: .6s;
+    text-decoration: none;
+}
+
+/*Botões Login e cadastro*/
+
+/*Aqui ficará todo o cabeçalho*/
+
+
+/*-----------------------------------------------------------------*/
+
+/*Aqui ficará o menu e afins*/
+
+.menu{
+    text-align: center;
+    background-color: green;
+    margin: 50px;
+    font-weight:bold ;
+    padding: 15px;
+    
+}
+.menu1{
+    margin-right: 50px;
+    justify-items: right;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Century, 'Franklin Gothic Medium';
+    transition: 1s;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.menu2{
+    margin-right: 50px;
+    justify-items: right;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Century, 'Franklin Gothic Medium';
+    transition: 1s;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.menu3{
+    margin-right: 50px;
+    justify-items: right;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: Century, 'Franklin Gothic Medium';
+    transition: 1s;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.menu4{
+    margin-right: 50px;
+    justify-items: right;
+    text-decoration: none;
+    color: whitesmoke;
+    font-family:Century, 'Franklin Gothic Medium';
+    transition: 1s;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+/*Aqui ficará o corpo*/
+.corpo{
+    margin-left: 65px;
+    padding: 0;
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.carrossel{
+    text-align: center;
+    color: black;
+    background-color: transparent;
+}
+.slider{
+    margin: 0 auto;
+    width: 1200px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+    transition: 2s;
+}
+
+.slide img{
+    width: 90%;
+    
+}
+
+
+.manual-navigation{
+    position: absolute;
+    width: 1150px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid green;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+.manual-btn:hover{
+    background-color: gold;
+}
+
+#radio1:checked ~ .first{
+    margin-left:0;
+
+}
+#radio2:checked ~ .first{
+    margin-left:-35%;
+
+}
+#radio3:checked ~ .first{
+    margin-left:-119%;
+
+}
+#radio4:checked ~ .first{
+    margin-left:-0%;
+
+}
+.navigation-auto .auto-btn{
+    border:2px solid transparent;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40%;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: #fff;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background-color: #fff;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background-color: #fff;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background-color: #fff;
+}
+/*Aqui ficará o corpo*/
+
+/*-----------------------------------------------------------------*/
+
+/*Aqui ficará o rodapé*/
+
+.flooter{
+    background-color: blueviolet;
+    text-align: center;
+}
