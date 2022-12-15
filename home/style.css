@@ -176,7 +176,7 @@
     justify-items: right;
     text-decoration: none;
     color: whitesmoke;
-    font-family:Century, 'Franklin Gothic Medium';
+    font-family:'Arial Narrow Bold', sans-serif;
     transition: 1s;
     font-size: 20px;
     font-weight: bold;
@@ -309,6 +309,32 @@
 /*Aqui ficará o rodapé*/
 
 .flooter{
-    background-color: blueviolet;
-    text-align: center;
+    background-color: green;
+}
+.lists{
+    background-color: rgb(53, 44, 44);
+    display: flex;
+    justify-content: center;
+}
+h3{
+    padding-bottom: 7px;
+    color: lawngreen;
+
+}
+.lists .list{
+    background-color: rgb(53, 44, 44);
+    margin-bottom: 20px;
+    padding-top: 15px;
+    font-size: 12px;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+.linkflooter{
+    text-decoration: none;
+    color: white;
+}
+ul{     
+    color: lawngreen;
+    font-size: 17px;
+    font-weight: bold;
+    padding-bottom: 20px;
 }
